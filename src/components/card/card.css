@@ -1,0 +1,82 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    width: 100vw;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 250px;
+    position: relative;
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.delete-button {
+    background-color: rgba(255, 0, 0, 0.8);
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition: background-color 0.2s ease-in-out, transform 0.1s;
+}
+
+.delete-button:hover {
+    background-color: rgba(255, 0, 0, 1);
+    transform: scale(1.1);
+}
+
+.update-button {
+    background-color: rgba(0, 153, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    right: 8px;
+    transition: background-color 0.2s ease-in-out, transform 0.1s;
+}
+
+.update-button:hover {
+    background-color: rgba(0, 153, 255, 1.8);
+    transform: scale(1.1);
+}
